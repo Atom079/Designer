@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/font/Poppins-Regular.ttf");
+}
+html, body {
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */
