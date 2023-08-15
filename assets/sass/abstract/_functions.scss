@@ -1,0 +1,15 @@
+@use "./variables" as vars;
+@function colorChecker($textColor, $bgColor){
+   @if $textColor == #fff and bgChecker($bgColor) != vars.$second-color{
+    @return vars.$global-color;
+   } @else{
+    @return #fff;
+   }
+}
+@function bgChecker($bgColor){
+    @if $bgColor == #fff{
+        @return vars.$global-color;
+    }@else{
+        @return vars.$second-color;
+    }
+}

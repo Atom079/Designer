@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./assets/sass/style.css">
     <title>Designer | Sass Template</title>
 </head>
 <body>
-    
+    <!-- Header section start -->
+    <div class="header header">
+        <!-- Navbar section start -->
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/images/white-logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="nav-list">
+                    <a href="./index.html" class="nav-list-link active">Homepage</a>
+                    <a href="#" class="nav-list-link">About Us</a>
+                    <a href="#" class="nav-list-link">Explore Work</a>
+                    <a href="#" class="nav-list-link">Trending</a>
+                    <a href="#" class="nav-list-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar section end -->
+        <!-- Home section start -->
+        <section class="home">
+            <div class="section-start">
+                <p class="section-secondary-text">
+                    WE PROVIDE EVERYTHING
+                </p>
+                <h1 class="section-title">
+                    <span>INTERIOR</span> DESIGNER
+                </h1>
+                <button class="white-btn">
+                    <a href="#">Discover Me</a>
+                </button>
+            </div>
+            <form class="form container">
+                <div class="main-content">
+                    <div class="form-group">
+                        <label for="text" class="form-label">Search Work by Title</label>
+                        <input type="text" id="text" class="form-control" placeholder="Type any work title...">
+                    </div>
+                    <div class="form-group">
+                        <label for="dropdown1" class="form-label">Choose Category</label>
+                        <select name="#" id="dropdown1" class="form-control">
+                            <option value="value1">Choose category</option>
+                            <option value="value2">Interior Design</option>
+                            <option value="value3">Exterior Design</option>
+                            <option value="value4">New Ideas</option>
+                            <option value="value5">Trendy Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropdown2" class="form-label">Price Range</label>
+                        <select name="#" id="dropdown2" class="form-control">
+                            <option value="option1">Choose price</option>
+                            <option value="option2">$100 - $250</option>
+                            <option value="option3">$250 - $500</option>
+                            <option value="option4">$500 - $1000</option>
+                            <option value="option5">$1000 +</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropdown3" class="form-label">Pick a Plan</label>
+                        <select name="#" id="dropdown3" class="form-control">
+                            <option value="options1">Choose plan</option>
+                            <option value="options2">Standard</option>
+                            <option value="options3">Professional</option>
+                            <option value="options4">Golden</option>
+                            <option value="options5">Premium</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn">
+                    <a href="#">Search Now</a>
+                </button>
+            </form>
+        </section>
+        <!-- Home section end -->
+    </div>
+    <!-- Header section end -->
+    <!-- Js link -->
+    <script src="./assets/js/script.js"></script>
+    <!-- End Js link -->
 </body>
 </html>

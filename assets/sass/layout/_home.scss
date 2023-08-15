@@ -1,0 +1,52 @@
+@use "../abstract/mixin" as mixin;
+@use "../abstract/variables" as vars;
+.home {
+  @include mixin.sectionStart;
+  .white-btn {
+    @include mixin.btn(#fff, vars.$global-color);
+  }
+  .form {
+    position: absolute;
+    bottom: -15%;
+    left: 5%;
+    background-color: #fff;
+    padding: 3rem;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    .main-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &-label {
+      display: block;
+      font: {
+        weight: bold;
+        size: 1.2rem;
+      }
+    }
+    &-control {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgb(230, 230, 230);
+      border-radius: 0.5rem;
+      &:focus {
+        border-color: #000137;
+      }
+      margin: 1rem {
+        left: 0;
+      }
+      font-size: 1.1rem;
+      &::placeholder {
+        font-size: 1.1rem;
+      }
+    }
+    .btn {
+      @include mixin.btn(vars.$global-color, #fff);
+      width: 100%;
+      display: block;
+    }
+  }
+}

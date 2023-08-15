@@ -1,0 +1,42 @@
+@use '../abstract/variables' as vars;
+.nav{
+    height: 10vh;
+    width: 100%;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        padding-top: 1rem;
+    }
+    &-list-link{
+        color: #fff;
+        margin-right: 2rem;
+        padding: 1rem;
+        transition: all .4s ease-in-out;
+        &:hover{
+            color: vars.$global-color;
+        }
+        &.active{
+            background-color: #fff;
+            color: vars.$global-color;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+    }
+    &.active{
+        background-color: vars.$second-color;
+        position: fixed;
+        left: 0;
+        top: 0; 
+        padding-top: .5rem;
+        .nav-list-link{
+            border-radius: .5rem;
+            padding: 0.5rem;
+        }
+        .logo{
+            padding-top: 1rem;
+        }
+    }
+}  

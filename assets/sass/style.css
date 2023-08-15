@@ -8,10 +8,168 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("/assets/font/Poppins-Regular.ttf");
 }
 html, body {
   font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-image: url("/assets/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.home .section-start {
+  margin-top: 10%;
+  text-align: center;
+  color: #fff;
+}
+.home .section-secondary-text {
+  padding: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.home .section-title {
+  font-weight: 900;
+  font-size: 3.5rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.home .section-title span {
+  color: #FF565B;
+}
+.home .white-btn {
+  background-color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.home .white-btn a {
+  color: #FF565B;
+  font-size: 1.025rem;
+}
+.home .white-btn:hover {
+  background-color: #FF565B;
+}
+.home .white-btn:hover a {
+  color: #fff;
+}
+.home .form {
+  position: absolute;
+  bottom: -15%;
+  left: 5%;
+  background-color: #fff;
+  padding: 3rem;
+  margin-top: 5rem;
+  border-radius: 0.5rem;
+}
+.home .form .main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-around;
+}
+.home .form-label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.home .form-control {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  margin-left: 0;
+  font-size: 1.1rem;
+}
+.home .form-control:focus {
+  border-color: #000137;
+}
+.home .form-control::-moz-placeholder {
+  font-size: 1.1rem;
+}
+.home .form-control:-ms-input-placeholder {
+  font-size: 1.1rem;
+}
+.home .form-control::placeholder {
+  font-size: 1.1rem;
+}
+.home .form .btn {
+  background-color: #FF565B;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  display: block;
+}
+.home .form .btn a {
+  color: #fff;
+  font-size: 1.025rem;
+}
+.home .form .btn:hover {
+  background-color: #2A2A2A;
+}
+.home .form .btn:hover a {
+  color: #fff;
+}
+
+.nav {
+  padding-bottom: 1rem;
+  height: 10vh;
+  width: 100%;
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .logo {
+  padding-top: 1rem;
+}
+.nav-list-link {
+  color: #fff;
+  margin-right: 2rem;
+  padding: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.nav-list-link:hover {
+  color: #FF565B;
+}
+.nav-list-link.active {
+  background-color: #fff;
+  color: #FF565B;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.nav.active {
+  background-color: #2A2A2A;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-bottom: 0;
+  padding-top: 0.5rem;
+}
+.nav.active .nav-list-link {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.nav.active .logo {
+  padding-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
