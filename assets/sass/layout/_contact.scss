@@ -1,0 +1,46 @@
+@use '../abstract/mixin' as mix;
+@use '../abstract/variables' as vars;
+.contact{
+    @include mix.sectionStart;
+    background-image: url("/assets/images/contact-us-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 1rem;
+    .content{
+        padding: 3rem;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: .5rem;
+        align-items: center;
+    }
+    .content-text{
+        margin-right: 1rem;
+    }
+   .form{
+    &-group{
+        display: flex;
+        align-items: center;
+    }
+    &-control{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+        border: 1px solid rgb(230, 230, 230);
+        border-radius: 0.5rem;
+        &:focus {
+          border-color: #000137;
+        }
+        margin: 1rem {
+          left: 0;
+        }
+    }
+    &-btn {
+        margin: 1rem 0;
+        @include mix.btn(vars.$global-color, #fff);
+        width: 100%;
+        display: block;
+      } 
+   }
+}
