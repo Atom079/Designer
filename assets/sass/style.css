@@ -79,6 +79,7 @@ html, body {
   bottom: -15%;
   left: 5%;
   background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   padding: 3rem;
   margin-top: 5rem;
   border-radius: 0.5rem;
@@ -91,6 +92,7 @@ html, body {
   justify-content: space-around;
 }
 .home .form-label {
+  padding: 1rem 0;
   display: block;
   font-weight: bold;
   font-size: 1.2rem;
@@ -98,6 +100,7 @@ html, body {
 .home .form-control {
   width: 100%;
   padding: 0.5rem 1rem;
+  margin: 1rem;
   border: 1px solid rgb(230, 230, 230);
   border-radius: 0.5rem;
   margin: 1rem;
@@ -117,6 +120,7 @@ html, body {
   font-size: 1.1rem;
 }
 .home .form .btn {
+  margin: 1rem 0;
   background-color: #FF565B;
   padding: 0.8rem 2rem;
   border-radius: 0.8rem;
@@ -257,4 +261,112 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.whatstrending {
+  margin-top: 15rem;
+  padding: 1rem 0;
+}
+.whatstrending .section-start {
+  padding: 1rem 0;
+}
+.whatstrending .section-title {
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+.whatstrending .section-text {
+  color: #FF565B;
+  padding-left: 6.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+}
+.whatstrending .section-text span {
+  color: #000;
+}
+.whatstrending .section-text::before {
+  content: " ";
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  width: 6.25rem;
+  height: 3px;
+  background-color: #FF565B;
+}
+.whatstrending .main-text {
+  color: #7A7A7A;
+  padding: 1rem 0;
+}
+.whatstrending .content {
+  margin: 4rem;
+  margin-right: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.whatstrending .content-text {
+  width: 80%;
+}
+.whatstrending .content-img {
+  display: flex;
+  align-items: center;
+  height: 20rem;
+}
+.whatstrending .content-img .second-img {
+  height: 100%;
+  width: 50%;
+  background-image: url("/assets/images/whats-trending-right-image.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.whatstrending .content-img .main-img {
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 140%;
+  position: relative;
+  background-image: url("/assets/images/whats-trending-item-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.whatstrending .content-img .main-img:hover .descr {
+  opacity: 1;
+}
+.whatstrending .descr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #FF565B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  border-radius: 0.5rem;
+}
+.whatstrending .btn {
+  margin: 1rem 0;
+  background-color: #FF565B;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.whatstrending .btn a {
+  color: #fff;
+  font-size: 1.025rem;
+}
+.whatstrending .btn:hover {
+  background-color: #2A2A2A;
+}
+.whatstrending .btn:hover a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixin" as mixs;
+.whatstrending {
+    margin-top: 15rem;
+  @include mixs.sectionStart;
+
+  .main-text {
+    color: vars.$text-color;
+    padding: 1rem 0;
+  }
+  padding: 1rem 0;
+  .content {
+    margin: 4rem {
+      right: 0;
+    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .content-text{
+    width: 80%;
+  }
+  .content-img {
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    .second-img {
+      height: 100%;
+      width: 50%;
+      background-image: url("/assets/images/whats-trending-right-image.png");
+      background-position: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .main-img {
+      border-radius: 0.5rem;
+      width: 50%;
+      height: 140%;
+      position: relative;
+      background-image: url("/assets/images/whats-trending-item-image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+
+      &:hover {
+        .descr {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .descr {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: vars.$global_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    border-radius: 0.5rem;
+  }
+
+  .btn {
+    margin: 1rem 0;
+    @include mixs.btn(vars.$global_color, #fff);
+  }
+}

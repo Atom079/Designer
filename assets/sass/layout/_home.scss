@@ -11,6 +11,7 @@
     bottom: -15%;
     left: 5%;
     background-color: #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
     padding: 3rem;
     margin-top: 5rem;
     border-radius: 0.5rem;
@@ -23,6 +24,7 @@
     }
 
     &-label {
+      padding: 1rem 0;
       display: block;
       font: {
         weight: bold;
@@ -32,6 +34,7 @@
     &-control {
       width: 100%;
       padding: 0.5rem 1rem;
+      margin: 1rem;
       border: 1px solid rgb(230, 230, 230);
       border-radius: 0.5rem;
       &:focus {
@@ -46,6 +49,7 @@
       }
     }
     .btn {
+      margin: 1rem 0;
       @include mixin.btn(vars.$global-color, #fff);
       width: 100%;
       display: block;
