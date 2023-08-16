@@ -1,0 +1,62 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixin" as mixins;
+.work {
+  margin-top: 15rem;
+  @include mixins.sectionStart;
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .content-img{
+    img{
+        border-radius: 1rem;
+        width: 95%;
+        height: 55%;
+        object-fit: cover;
+    }
+  }
+  .content-text{
+    .title{
+        padding-bottom: 1rem;
+        margin: 1rem{
+          top: 0;
+        };
+        border-bottom: 1px solid #e4e4e4;
+    }
+    .text{
+        color: vars.$text-color;
+        padding: 1rem;
+        i{
+            margin-right: 0.2rem;
+            font-weight: bold;
+        }
+        span{
+          color: vars.$second-color;
+          font-weight: bold;
+        }
+    }
+    .title-icon{
+        font: {
+            weight: bold;
+            size: 1.2rem;
+          };
+          padding: 1rem;
+          color: vars.$second-color;
+          transition: all .4s ease-in-out;
+        &:hover{
+          color: vars.$global-color;
+        }
+    }
+    .par{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .par-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+  }
+}

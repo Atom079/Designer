@@ -1,11 +1,12 @@
 @use "../abstract/mixin" as mixin;
 @use "../abstract/variables" as vars;
 .home {
-  @include mixin.sectionStart;
+  @include mixin.pageStart;
   .white-btn {
     @include mixin.btn(#fff, vars.$global-color);
   }
   .form {
+    
     position: absolute;
     bottom: -15%;
     left: 5%;
@@ -14,6 +15,7 @@
     margin-top: 5rem;
     border-radius: 0.5rem;
     .main-content {
+      gap: 1rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       align-items: center;

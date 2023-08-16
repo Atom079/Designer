@@ -1,92 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- CSS link -->
-    <link rel="stylesheet" href="./assets/sass/style.css">
+    <link rel="stylesheet" href="./assets/sass/style.css" />
     <title>Designer | Sass Template</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header section start -->
     <div class="header header">
-        <!-- Navbar section start -->
-        <nav class="nav">
-            <div class="container">
-                <div class="logo">
-                    <img src="./assets/images/white-logo.png" alt="Logo" class="logo-img">
-                </div>
-                <div class="nav-list">
-                    <a href="./index.html" class="nav-list-link active">Homepage</a>
-                    <a href="#" class="nav-list-link">About Us</a>
-                    <a href="#" class="nav-list-link">Explore Work</a>
-                    <a href="#" class="nav-list-link">Trending</a>
-                    <a href="#" class="nav-list-link">Contact Us</a>
-                </div>
+      <!-- Navbar section start -->
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <img
+              src="./assets/images/white-logo.png"
+              alt="Logo"
+              class="logo-img"
+            />
+          </div>
+          <div class="nav-list">
+            <a href="./index.html" class="nav-list-link active">Homepage</a>
+            <a href="#" class="nav-list-link">About Us</a>
+            <a href="#" class="nav-list-link">Explore Work</a>
+            <a href="#" class="nav-list-link">Trending</a>
+            <a href="#" class="nav-list-link">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar section end -->
+      <!-- Home section start -->
+      <section class="home">
+        <div class="page-start">
+          <p class="page-secondary-text">WE PROVIDE EVERYTHING</p>
+          <h1 class="page-title"><span>INTERIOR</span> DESIGNER</h1>
+          <button class="white-btn">
+            <a href="#">Discover Me</a>
+          </button>
+        </div>
+        <form class="form container">
+          <div class="main-content">
+            <div class="form-group">
+              <label for="text" class="form-label">Search Work by Title</label>
+              <input
+                type="text"
+                id="text"
+                class="form-control"
+                placeholder="Type any work title..."
+              />
             </div>
-        </nav>
-        <!-- Navbar section end -->
-        <!-- Home section start -->
-        <section class="home">
-            <div class="section-start">
-                <p class="section-secondary-text">
-                    WE PROVIDE EVERYTHING
-                </p>
-                <h1 class="section-title">
-                    <span>INTERIOR</span> DESIGNER
-                </h1>
-                <button class="white-btn">
-                    <a href="#">Discover Me</a>
-                </button>
+            <div class="form-group">
+              <label for="dropdown1" class="form-label">Choose Category</label>
+              <select name="#" id="dropdown1" class="form-control">
+                <option value="value1">Choose category</option>
+                <option value="value2">Interior Design</option>
+                <option value="value3">Exterior Design</option>
+                <option value="value4">New Ideas</option>
+                <option value="value5">Trendy Design</option>
+              </select>
             </div>
-            <form class="form container">
-                <div class="main-content">
-                    <div class="form-group">
-                        <label for="text" class="form-label">Search Work by Title</label>
-                        <input type="text" id="text" class="form-control" placeholder="Type any work title...">
-                    </div>
-                    <div class="form-group">
-                        <label for="dropdown1" class="form-label">Choose Category</label>
-                        <select name="#" id="dropdown1" class="form-control">
-                            <option value="value1">Choose category</option>
-                            <option value="value2">Interior Design</option>
-                            <option value="value3">Exterior Design</option>
-                            <option value="value4">New Ideas</option>
-                            <option value="value5">Trendy Design</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="dropdown2" class="form-label">Price Range</label>
-                        <select name="#" id="dropdown2" class="form-control">
-                            <option value="option1">Choose price</option>
-                            <option value="option2">$100 - $250</option>
-                            <option value="option3">$250 - $500</option>
-                            <option value="option4">$500 - $1000</option>
-                            <option value="option5">$1000 +</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="dropdown3" class="form-label">Pick a Plan</label>
-                        <select name="#" id="dropdown3" class="form-control">
-                            <option value="options1">Choose plan</option>
-                            <option value="options2">Standard</option>
-                            <option value="options3">Professional</option>
-                            <option value="options4">Golden</option>
-                            <option value="options5">Premium</option>
-                        </select>
-                    </div>
-                </div>
-                <button class="btn">
-                    <a href="#">Search Now</a>
-                </button>
-            </form>
-        </section>
-        <!-- Home section end -->
+            <div class="form-group">
+              <label for="dropdown2" class="form-label">Price Range</label>
+              <select name="#" id="dropdown2" class="form-control">
+                <option value="option1">Choose price</option>
+                <option value="option2">$100 - $250</option>
+                <option value="option3">$250 - $500</option>
+                <option value="option4">$500 - $1000</option>
+                <option value="option5">$1000 +</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dropdown3" class="form-label">Pick a Plan</label>
+              <select name="#" id="dropdown3" class="form-control">
+                <option value="options1">Choose plan</option>
+                <option value="options2">Standard</option>
+                <option value="options3">Professional</option>
+                <option value="options4">Golden</option>
+                <option value="options5">Premium</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn">
+            <a href="#">Search Now</a>
+          </button>
+        </form>
+      </section>
+      <!-- Home section end -->
     </div>
     <!-- Header section end -->
+    <!-- Work section start -->
+    <section class="work container">
+        <div class="section-start">
+            <h1 class="section-title">EXPLORE SOME OF OUR LATEST</h1>
+            <p class="section-text">
+              INTERIOR DESIGN WORK <span class="section-fullstop">.</span>
+            </p>
+          </div>
+          <div class="content">
+            <div class="content-img">
+              <img src="./assets/images/explore-work-left-image.jpg" alt="img" />
+            </div>
+            <div class="content-text">
+              <h1 class="title">Interior Design</h1>
+              <p class="text">
+                <i class="fa-solid fa-calendar-days"></i>
+                January 22, 2022
+              </p>
+              <a href="#" class="title-icon">
+                The Waterfront Cafe and Restaurant
+                <i class="fa-solid fa-right-long"></i>
+              </a>
+              <div class="par">
+                <p class="text">
+                    <i class="fa-solid fa-map"></i>
+                    Florida, USA 
+                </p>
+                <p class="text w-70">
+                    Designer HTML5 Nursaidbek Qodirov is 100% free to
+                    <br> download provided by Nursaidbek Qodirov website.
+                </p>
+              </div>
+              <h1 class="title">
+                Building & Developing
+              </h1>
+              <p class="text">
+                <i class="fa-solid fa-calendar-days"></i>
+                January 20, 2022
+              </p>
+              <a href="#" class="title-icon">
+                Home Land Port Canaveral Suites 
+                <i class="fa-solid fa-right-long"></i>
+              </a>
+              <div class="par">
+                <p class="text">
+                    <i class="fa-solid fa-map"></i>
+                    Miami Beach, Florida, USA
+                </p>
+                <p class="text w-70">
+                    This is based on Sass latest syntax CSS layout where you can easily edit and use Sass components.</p>
+              </div>
+              <h1 class="title">Giving Your Brand Power</h1>
+              <div class="par-2">
+                <p class="text">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    January 18, 2022
+                  </p>
+                  <a href="#" class="title-icon">
+                    Hallandale Beach Motel Design
+                    <i class="fa-solid fa-right-long"></i>
+                  </a>
+              </div>
+              <div class="par">
+                <p class="text">
+                    <i class="fa-solid fa-map"></i>
+                    North City Beach Park
+                </p>
+                <p class="text w-70">
+                    Feel free to download & use this template for your websites. Please tell your friends about Nursaidbek Qodirov.
+                </p>
+              </div>
+              <h1 class="title">Boost Up Your Style</h1>
+              <div class="par-2">
+                <p class="text">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    January 16, 2022
+                  </p>
+                  <a href="#" class="title-icon">
+                    Interior for Marina Beach Resort
+                    <i class="fa-solid fa-right-long"></i>
+                  </a>
+              </div>
+              <div class="par">
+                <p class="text">
+                    <i class="fa-solid fa-map"></i>
+                    Sunny Isles Beach, FL 33160
+                </p>
+                <p class="text w-70">
+                   You are <span>NOT allowed</span> to redistribute the downloadable ZIP file of this template on any other website. Please contact us for more info.
+                </p>
+              </div>
+            </div>
+          </div>
+     
+    </section>
+    <!-- Work section end -->
     <!-- Js link -->
     <script src="./assets/js/script.js"></script>
     <!-- End Js link -->
-</body>
+  </body>
 </html>
