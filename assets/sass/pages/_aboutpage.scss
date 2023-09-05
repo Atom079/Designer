@@ -1,0 +1,37 @@
+/*About Page styles*/
+@use '../abstract/variables' as vars;
+@use '../layout/interior';
+.about{
+    .page-secondary-text{
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+    .header{
+        background-image: url("/assets/images/page-banner-bg.jpg");
+        min-height: 80vh;
+    }
+    .about_form{
+        background: none;
+        box-shadow: 0 0 0 transparent;
+        .main-content{
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.2rem;
+        }
+        .form-group{
+            border-radius: .5rem;
+            padding: 3rem;
+            margin: 0 1rem;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.3);
+        }
+        .icon{
+            color: vars.$global-color;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+/*//About Page styles*/

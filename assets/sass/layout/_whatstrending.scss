@@ -1,3 +1,4 @@
+/*Whatstrending section styles*/
 @use "../abstract/variables" as vars;
 @use "../abstract/mixin" as mixs;
 .whatstrending {
@@ -73,3 +74,4 @@
     @include mixs.btn(vars.$global_color, #fff);
   }
 }
+/*Whatstrending section styles*/

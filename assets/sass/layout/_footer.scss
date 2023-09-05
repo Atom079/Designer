@@ -1,0 +1,100 @@
+/*Footer styles*/
+@use "../abstract/variables" as vars;
+@use "../abstract/mixin" as mixins;
+.footer {
+  position: relative;
+  padding: {
+    top: 4rem;
+    bottom: 4rem;
+  }
+  .first-line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding-bottom: 5rem;
+  }
+  .bottom-line {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    width: 100%;
+    .text{
+      color: vars.$text-color;
+    }
+    a{
+      color: vars.$global_color;
+    }
+  }
+  .logo {
+    padding: auto {
+      top: 1rem;
+      bottom: 2rem;
+    }
+  }
+  .main-text {
+    width: 65%;
+    font-size: 1.1rem;
+    color: vars.$second-color;
+  }
+  .form {
+    margin: auto {
+      left: 1rem;
+    }
+    &-title {
+      margin-bottom: 1rem;
+    }
+    &-control {
+      border: 2px solid #000;
+      padding: 1rem {
+        right: 5rem;
+      }
+      transition: all .4s ease-in-out;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      font-size: 1.2rem;
+      height: 3rem;
+      &:focus {
+        outline: none;
+        border-color: vars.$global_color;
+      }
+    }
+    &-btn {
+      @include mixins.btn(vars.$global_color, #fff);
+      border-radius: 0;
+      height: 3rem;
+      padding: 1rem;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    &-group {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+  }
+}
+.foo-list {
+  display: inline-block;
+  margin: 1rem {
+    right: 3rem;
+    bottom: 0;
+  }
+  padding-bottom: 2rem;
+  &-item {
+    list-style: none;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    color: vars.$text-color;
+    &.title {
+      padding: 1rem 0;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: vars.$second-color;
+    }
+    i {
+      font-weight: bold;
+    }
+  }
+}
+/*//Footer styles*/
