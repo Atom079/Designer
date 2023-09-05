@@ -1,6 +1,7 @@
 /*About Page styles*/
 @use '../abstract/variables' as vars;
 @use '../layout/interior';
+@use '../layout/testimonials';
 .about{
     .page-secondary-text{
         width: 50%;

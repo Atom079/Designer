@@ -1,0 +1,79 @@
+@use '../abstract/variables' as vars;
+.testimonials {
+  padding: 0 {
+    top: 4rem;
+    bottom: 2rem;
+  }
+
+  .items {
+    padding: 1.5rem 1rem;
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    background-image: url("/assets/images/testimonial-bg.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .item {
+    position: relative;
+    padding: 3rem;
+    margin-right: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.15);
+    border-radius: .5rem .5rem 0 .5rem;
+    z-index: 2;
+    &::before {
+      content: "";
+      position: absolute;
+      right: -10px;
+      bottom: -5px;
+      width: 10px;
+      height: 100%;
+      border-top-right-radius: 7.5px;
+      border-bottom-right-radius: 7.5px;
+      z-index: -2;
+      background-color: #f6c5c6;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+      width: 100%;
+      height: 10px;
+      border-bottom-left-radius: 7.5px;
+      border-bottom-right-radius: 7.5px;
+      z-index: -2;
+      background-color: #f6c5c6;
+    }
+    .name{
+        padding: .5rem 0;
+        font-size: 1.2rem;
+    }
+    .pro{
+        color: vars.$text-color;
+        padding-bottom: 0.5rem;
+    }
+    .icons{
+        padding-bottom: 0.5rem;
+    }
+    i{
+        color: vars.$global-color;
+    }
+    .main-text{
+        color: vars.$text-color;
+        padding-top: 1rem;
+        padding-right: 4rem;
+    }
+    .message{
+        position: absolute;
+        top: -1rem;
+        left: 1rem;
+        font-size: 3rem;
+    }
+  }
+}
