@@ -97,4 +97,18 @@
     }
   }
 }
+.top_footer{
+  background: vars.$second-color;
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 2rem;
+  h1{
+    font-size: 2.5rem;
+  }
+  .btn{
+    @include mixins.btn(#fff, #000)
+  }
+}
 /*//Footer styles*/
