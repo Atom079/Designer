@@ -869,4 +869,110 @@ html, body {
   color: #7A7A7A;
 }
 
-/*//Explore Page styles*//*# sourceMappingURL=style.css.map */
+/*//Explore Page styles*/
+/*About Page styles*/
+.trending .page-secondary-text {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.trending .header {
+  background-image: url("/assets/images/page-banner-bg.jpg");
+  min-height: 80vh;
+}
+.trending .about_form {
+  background: none;
+  box-shadow: 0 0 0 transparent;
+}
+.trending .about_form .main-content {
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.2rem;
+}
+.trending .about_form .form-group {
+  border-radius: 0.5rem;
+  padding: 3rem;
+  margin: 0 1rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.trending .about_form .icon {
+  color: #FF565B;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.trending .main-content {
+  padding: 1rem;
+}
+.trending .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+.trending .row .item {
+  height: 31rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  width: 20rem;
+}
+.trending .row .item:hover img {
+  transform: scale(1.1);
+}
+.trending .row .item:hover .link {
+  transform: translateY(0%);
+}
+.trending .row .small-item {
+  position: relative;
+  height: 15rem;
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.trending .row .small-item:hover img {
+  transform: scale(1.1);
+}
+.trending .row .small-item:hover .link {
+  transform: translateY(0%);
+}
+.trending .row img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+.trending .row .text {
+  position: absolute;
+  z-index: 22;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  background-color: #FF565B;
+  border-bottom-right-radius: 0.5rem;
+  color: #fff;
+}
+.trending .row .link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FF565B;
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(100%);
+  transition: all 0.4s ease-in-out;
+}
+.trending .row .link a {
+  color: #fff;
+}
+
+/*//About Page styles*//*# sourceMappingURL=style.css.map */
