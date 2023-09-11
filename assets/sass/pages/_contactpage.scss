@@ -1,0 +1,73 @@
+/*Contact section styles*/
+@use '../abstract/variables' as vars;
+@use '../abstract/mixin' as mixin;
+.contactsection{
+    .page-secondary-text{
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+    .header{
+        background-image: url("/assets/images/page-banner-bg.jpg");
+        min-height: 80vh;
+    }
+    .content-text{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 4rem 0;
+        padding: 2rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        .link{
+            padding: 1rem;
+            margin: 1rem 0;
+            height: 30%;
+            background-color: vars.$global-color;
+            font-weight: bold;
+            border-radius: .5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            i{
+                font-size: 2rem;
+            }
+            
+        }
+        .form{
+            &-control{
+                padding: 1rem;
+                width: 45%;
+                margin: 0 {
+                    bottom: 1rem;
+                    right: 1rem
+                };
+                border-radius: .5rem;
+                border: 1px solid #9A9A9A;
+            }
+        }
+        .form-btn{
+            @include mixin.btn(vars.$global-color, #fff);
+            width: 93%;
+        }
+    }
+    .text{
+        margin-right: 1rem;
+    }
+   
+    .textarea{
+        padding: 1rem;
+        width: 93%;
+        margin: 0 {
+            bottom: 1rem;
+            right: 1rem
+        };
+        border-radius: .5rem;
+        border: 1px solid #9A9A9A;
+    }
+   
+    @include mixin.sectionStart;
+    
+}
+/*//Contact section styles*/
