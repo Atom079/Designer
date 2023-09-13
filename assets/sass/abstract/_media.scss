@@ -1,0 +1,190 @@
+@use './variables' as vars;
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 95%;
+    }
+    .nav{
+        
+        &-list-link{
+            margin-right: 0;
+            padding: 1rem .5rem;
+            border-bottom: 1px solid #000;
+        }
+        &.active{
+            .nav-list-link{
+                padding: 1rem .5rem;
+            }
+        }
+    }    
+    
+    .home{
+        
+        .form{
+            padding: 0;
+            
+            position: relative;
+            left: 0;
+            padding: 1rem;
+            .main-content{
+                display: block;
+            }
+        }
+    }
+    .work{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .nav{
+        padding-bottom: 1rem;
+        .burger{
+            display: block;
+        }
+        .container{
+            display: block;
+        }
+        &-list{
+            background-color: #000;
+            border-radius: .5rem;
+            position: absolute;
+            top: 12vh;
+            left: 1rem;
+            width: 95%;
+            transform: translateX(-200%);
+            opacity: 0;
+            transition: all .5s ease-in;
+            &.active{
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+        &-list-link{
+            display: block; 
+            color: #fff;
+            
+            
+            &.active{
+                color: vars.$global-color;
+                border-radius: .5rem;
+                background-color: transparent;
+            }
+        }
+    }
+    
+    .work{
+        padding: 0 1rem;
+        .content{
+            display: block;
+        }
+        .content-img{
+            img{
+                width: 100%;
+                height: 50%;
+            }
+        }
+    }
+    .whatstrending{
+        margin-top: 1rem;
+        .content{
+            display: block;
+        }
+        .content-img{
+            display: none;
+        }
+    }
+    .contact{
+        padding: 1rem;
+        .content{
+            display: block;
+            padding: 1rem;
+        }
+        frame{
+            width: 100%;
+        }
+    }
+    .footer{
+        padding: 4rem 2rem;
+        .first-line{
+            display: block;
+        }
+        .bottom-line{
+            display: block;
+        }
+    }
+    .about{
+        .about_form{
+            .form-group{
+                margin: 1rem 0;
+            }
+        }
+    }
+    .interior{
+        display: block;
+        img{
+            height: 50%;
+            width: 100%;
+        }
+    }
+    .testimonials{
+        .items{
+            display: block;
+            background-size: cover;
+            .item{
+                margin: 3rem 0;
+            }
+        }
+    }
+    .top_footer{
+        display: block;
+        padding: 1rem;
+    }
+    .explore{
+        .main-card{
+            .text-card{
+                display: block;
+                text-align: left;
+                width: 90%;
+            }
+        }
+        .main-img{
+            width: 100%;
+        }
+        .bottom-content{
+            .boxes{
+                display: block;
+            }
+        }
+    }
+    .trending{
+        .row{
+            display: block;
+        }
+    }
+    .contactsection{
+        .page-secondary-text{
+            width: 100%;
+        }
+        .content-text{
+            display: block;
+            .form{
+                &-control{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footer{
+        padding: 0;
+        .form{
+            margin-left: 0;
+            &-control{
+                padding: 1rem;
+            }
+            &-btn{
+                padding: 0.5rem;
+            }
+        }
+    }
+}

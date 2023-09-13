@@ -1,8 +1,9 @@
 /*Navbar section styles*/
 @use '../abstract/variables' as vars;
 .nav{
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
+    position: relative;
     .container{
         display: flex;
         align-items: center;
@@ -41,5 +42,18 @@
             padding-top: 1rem;
         }
     }
+    .burger{
+        color: #000;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.2rem;
+        padding: .5rem 1rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        cursor: pointer;
+        display: none;
+    }
+    
 }  
 /*//Navbar section styles*/

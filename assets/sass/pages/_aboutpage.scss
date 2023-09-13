@@ -16,6 +16,7 @@
         background: none;
         box-shadow: 0 0 0 transparent;
         .main-content{
+            display: grid;
             justify-content: center;
             grid-template-columns: repeat(3, 1fr);
             gap: 0.2rem;
